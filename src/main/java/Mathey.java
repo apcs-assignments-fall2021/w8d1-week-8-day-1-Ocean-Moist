@@ -8,7 +8,12 @@ public class Mathey {
      * public static ...
      */
     // YOUR CODE HERE, METHOD HEADER ALSO REQUIRED
-
+    public static int max(int x, int y) {
+        if (x > y) {
+            return x;
+        }
+        return y;
+    }
 
 
 
@@ -16,7 +21,12 @@ public class Mathey {
      * Ex. max(1.2, 4.0) => 4.0
      */
     // YOUR CODE HERE, METHOD HEADER ALSO REQUIRED
-
+    public static double max(double x, double y) {
+        if (x > y) {
+            return x;
+        }
+        return y;
+    }
 
 
 
@@ -24,7 +34,15 @@ public class Mathey {
      * Ex. max(1, 4, 2) => 4
      */
     // YOUR CODE HERE, METHOD HEADER ALSO REQUIRED
-
+    public static int max(int x, int y, int z){
+        if ((x > y) && (x > z)) {
+            return z;
+        }
+        if ((y > z) && (y > x)) {
+            return y;
+        }
+        return  z;
+    }
 
 
 
@@ -32,7 +50,12 @@ public class Mathey {
      * Ex. max(1.0, 4.25, 1.3, 2.1) => 4.25
      */
     // YOUR CODE HERE, METHOD HEADER ALSO REQUIRED
-
+    public double max(double a, double b, double c, double d) {
+        if (max(a,b) > max(c,d)) {
+            return max(a, b);
+        }
+        return max(c,d);
+    }
 
 
 
@@ -46,6 +69,10 @@ public class Mathey {
      */
     // YOUR CODE HERE, METHOD HEADER ALSO REQUIRED
 
+    public int randomInteger(int a, int b) {
+        return (int) (Math.random()*a - b + 1) + b;
+    }
+
 
 
 
@@ -57,7 +84,9 @@ public class Mathey {
      *     randomInteger(5) => 0
      */
     // YOUR CODE HERE, METHOD HEADER ALSO REQUIRED
-
+    public static int randomInteger(int a) {
+        return (int) (Math.random()* a + 1);
+    }
 
 
 
@@ -83,7 +112,12 @@ public class Mathey {
      *     abs(-2) => 2
      */
     // YOUR CODE HERE, METHOD HEADER ALSO REQUIRED
-
+    public static int abs(int x) {
+        if (x >= 0) {
+            return x;
+        }
+        return x * -1;
+    }
 
 
 
@@ -94,7 +128,9 @@ public class Mathey {
      *     round(2.5) => 2
      */
     // YOUR CODE HERE, METHOD HEADER ALSO REQUIRED
-
+    public static double round(double x) {
+        return (int) (x + .5);
+    }
 
 
 
