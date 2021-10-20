@@ -96,11 +96,10 @@ public class Mathey {
      */
     // YOUR CODE HERE, METHOD HEADER ALSO REQUIRED
     public static int pow(int x, int y) {
-        int tmp = x;
-        for (int i = 0; i < y; i++) {
-            x *= tmp;
+        if (y != 0) {
+            return (x * pow(x, y - 1));
         }
-        return x;
+        return 1;
     }
 
 
