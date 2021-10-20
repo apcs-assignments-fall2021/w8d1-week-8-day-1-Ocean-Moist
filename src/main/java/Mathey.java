@@ -1,5 +1,3 @@
-
-
 public class Mathey {
     /* Write your own version of the Math.max method
      * Your method should be called max
